@@ -46,3 +46,12 @@ if __name__ == "__main__":
     print("Input Pattern:", test_pattern)
     print("Recalled Pattern:", recalled_pattern)
     
+    def comparison(test, recalled):
+        if np.array_equal(test, recalled):
+            print("Patterns match")
+        else:
+            print("patterns do not match")
+        
+    comparison(test_pattern, recalled_pattern)
+        
+    
